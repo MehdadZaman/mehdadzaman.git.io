@@ -22,9 +22,9 @@ if(isset($_POST)) {
         echo "<script type='text/javascript'>alert('BEFORE BEING SENT');
         </script>";
 
-        mail($mailTo, $subject, $txt, $headers);
+        // mail($mailTo, $subject, $txt, $headers);
 
-        header("Location: contact.html");
+        // header("Location: contact.html");
 
         echo "<script type='text/javascript'>alert('Your message was sent');
         </script>";
