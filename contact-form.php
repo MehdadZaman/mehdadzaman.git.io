@@ -19,12 +19,14 @@ if(isset($_POST)) {
 
         $txt = "Personal website email: \nYou recieved an email from " .$name. ".\n\n" .$message;
 
+        echo "<script type='text/javascript'>alert('BEFORE BEING SENT');
+        </script>";
+
         mail($mailTo, $subject, $txt, $headers);
 
         header("Location: contact.html");
 
         echo "<script type='text/javascript'>alert('Your message was sent');
-        window.history.log(-1);
         </script>";
     }
 }
