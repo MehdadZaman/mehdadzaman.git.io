@@ -3478,7 +3478,7 @@ input, select, textarea {
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-		position: re;
+		position: relative;
 		text-align: center;
 		z-index: 21;
 	}
@@ -3495,8 +3495,6 @@ input, select, textarea {
 			background-position: center;
 			background-size: cover;
 		}
-
-		
 
 		#banner .content {
 			display: inline-block;
