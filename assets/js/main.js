@@ -269,21 +269,26 @@ var _ELEMENT = document.querySelector("#textType");
 var _CURSOR = document.querySelector("#cursorType");
 
 // Implements typing effect
-function Type() { 
-	// Get substring with 1 characater added
-	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
-	_ELEMENT.innerHTML = text;
-	_PART_INDEX++;
+function Type() {
+	try { 
+		// Get substring with 1 characater added
+		var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+		_ELEMENT.innerHTML = text;
+		_PART_INDEX++;
 
-	// If full sentence has been displayed then start to delete the sentence after some time
-	if(text === _CONTENT[_PART]) {
-		// Hide the cursor
-		_CURSOR.style.display = 'none';
+		// If full sentence has been displayed then start to delete the sentence after some time
+		if(text === _CONTENT[_PART]) {
+			// Hide the cursor
+			_CURSOR.style.display = 'none';
 
-		clearInterval(_INTERVAL_VAL);
-		setTimeout(function() {
-			_INTERVAL_VAL = setInterval(Delete, 50);
-		}, 1000);
+			clearInterval(_INTERVAL_VAL);
+			setTimeout(function() {
+				_INTERVAL_VAL = setInterval(Delete, 50);
+			}, 1000);
+		}
+	}
+	catch(err) {
+
 	}
 }
 
