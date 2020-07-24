@@ -3507,8 +3507,14 @@ input, select, textarea {
 
 			height: 100%;
 			width: 100%;
-			top: 5%;
+			top: 15%;
 		}
+
+		@media only screen and (max-width: 600px) {
+			#banner .content {
+				top: 3%;
+			}
+		  }
 
 			#banner .content header {
 				display: inline-block;
