@@ -3513,7 +3513,7 @@ input, select, textarea {
 		@media only screen and (min-width:480px) {
 			#banner .content {
 				top: 0%;
-				padding-top: 2em;
+				padding-top: 1em;
 				padding-right: 6em;
 				padding-left: 6em;
 				padding-bottom: 6em;
