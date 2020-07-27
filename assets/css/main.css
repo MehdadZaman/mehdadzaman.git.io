@@ -4242,10 +4242,6 @@ input, select, textarea {
 	cursor: pointer;
   }
 
-
-
-
-
   /* #banner2 */
 
 	#banner2 {
@@ -4285,9 +4281,7 @@ input, select, textarea {
 
 		#banner2 .content {
 			display: inline-block;
-			margin-right: 1%;
 			max-width: 95%;
-			padding: 6em;
 			position: relative;
 			text-align: center;
 			vertical-align: middle;
